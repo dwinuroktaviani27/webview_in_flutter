@@ -8,4 +8,6 @@ A new Flutter project.
 ## Listening for page load events
 ![Praktikum2](images/prak2.PNG)
 
+## Working with the WebViewController
+![Praktikum3](images/prak3.PNG)
 
