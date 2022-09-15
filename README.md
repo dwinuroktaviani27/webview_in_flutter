@@ -19,3 +19,6 @@ A new Flutter project.
 
 ## Working with JavaScript Channels for IP with json return
 ![Praktikum6](images/prak6.PNG)
+
+## Managing Cookies
+![Praktikum7](images/prak7.gif)
