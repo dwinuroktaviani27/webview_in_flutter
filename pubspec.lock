@@ -103,7 +103,7 @@ packages:
     source: hosted
     version: "1.8.0"
   plugin_platform_interface:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: plugin_platform_interface
       url: "https://pub.dartlang.org"
@@ -178,21 +178,21 @@ packages:
     source: hosted
     version: "3.0.4"
   webview_flutter_android:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: webview_flutter_android
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.8.14"
   webview_flutter_platform_interface:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: webview_flutter_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.2"
   webview_flutter_wkwebview:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: webview_flutter_wkwebview
       url: "https://pub.dartlang.org"

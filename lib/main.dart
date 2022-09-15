@@ -1,6 +1,8 @@
 import 'dart:io'; // Add this import.
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter_android/webview_android.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 void main() {
   runApp(
