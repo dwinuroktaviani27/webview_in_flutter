@@ -12,5 +12,8 @@ A new Flutter project.
 ![Praktikum3](images/prak3.PNG)
 
 ## Adding a menu button to the AppBar
-![Praktikum3](images/prak4.gif)
+![Praktikum4](images/prak4.gif)
+
+## Evaluating JavaScript
+![Praktikum5](images/prak5.gif)
 
