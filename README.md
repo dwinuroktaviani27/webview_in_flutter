@@ -22,3 +22,6 @@ A new Flutter project.
 
 ## Managing Cookies
 ![Praktikum7](images/prak7.gif)
+
+## Load Flutter assets, files and HTML strings in the WebView
+![Praktikum8](images/prak8.gif)
