@@ -11,3 +11,6 @@ A new Flutter project.
 ## Working with the WebViewController
 ![Praktikum3](images/prak3.PNG)
 
+## Adding a menu button to the AppBar
+![Praktikum3](images/prak4.gif)
+

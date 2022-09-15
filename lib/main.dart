@@ -1,9 +1,10 @@
-import 'dart:async'; // Add this import
+import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart'; // Add this import back
+import 'package:webview_flutter/webview_flutter.dart';
 
-import 'src/navigation_controls.dart'; // Add this import
+import 'src/menu.dart';
+import 'src/navigation_controls.dart';
 import 'src/web_view_stack.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class _WebViewAppState extends State<WebViewApp> {
         // Add from here ...
         actions: [
           NavigationControls(controller: controller),
+          Menu(controller: controller),
         ],
         // ... to here.
       ),
