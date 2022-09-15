@@ -17,3 +17,5 @@ A new Flutter project.
 ## Evaluating JavaScript
 ![Praktikum5](images/prak5.gif)
 
+## Working with JavaScript Channels for IP with json return
+![Praktikum6](images/prak6.PNG)

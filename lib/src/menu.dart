@@ -5,6 +5,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 enum _MenuOptions {
   navigationDelegate,
   userAgent,
+  javascriptChannel,
 }
 
 class Menu extends StatefulWidget {
@@ -28,7 +29,6 @@ class _MenuState extends State<Menu> {
               case _MenuOptions.navigationDelegate:
                 await controller.data!.loadUrl('https://youtube.com');
                 break;
-              // Add from here ...
               case _MenuOptions.userAgent:
                 final userAgent = await controller.data!
                     .runJavascriptReturningResult('navigator.userAgent');
@@ -37,7 +37,20 @@ class _MenuState extends State<Menu> {
                   content: Text(userAgent),
                 ));
                 break;
-              // ... to here.
+              case _MenuOptions.javascriptChannel:
+                await controller.data!.runJavascript('''
+var req = new XMLHttpRequest();
+req.open('GET', "https://api.ipify.org/?format=json");
+req.onload = function() {
+  if (req.status == 200) {
+    let response = JSON.parse(req.responseText);
+    SnackBar.postMessage("IP Address: " + response.ip);
+  } else {
+    SnackBar.postMessage("Error: " + req.status);
+  }
+}
+req.send();''');
+                break;
             }
           },
           itemBuilder: (context) => [
@@ -45,12 +58,14 @@ class _MenuState extends State<Menu> {
               value: _MenuOptions.navigationDelegate,
               child: Text('Navigate to YouTube'),
             ),
-            // Add from here ...
             const PopupMenuItem<_MenuOptions>(
               value: _MenuOptions.userAgent,
               child: Text('Show user-agent'),
             ),
-            // ... to here.
+            const PopupMenuItem<_MenuOptions>(
+              value: _MenuOptions.javascriptChannel,
+              child: Text('Lookup IP Address'),
+            ),
           ],
         );
       },
